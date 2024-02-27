@@ -11,11 +11,9 @@
 	<div class="min-h-full">
 		<nav class="flex justify-between navbar ba-base-100 border-b">
 			<div class="hidden sm:block">
-				<a href="/" class="btn btn-ghost normal-case text-xl">Day Care</a>
+				<a href="/" class="btn btn-ghost normal-case text-xl">Creative Kids Cottage</a>
 			</div>
-			<div>
-				<a class="self-auto" href="/login">Login</a>
-			</div>
+
 			<div class="dropdown dropdown-end mr-4">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -51,15 +49,16 @@
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 				>
 					<li>
-						<a href="/my/orders" class="justify-between">My orders</a>
+						<a href="/contact" class="justify-between">About us</a>
 					</li>
 					<li>
-						<a href="/my/settings">Settings</a>
+						<a href="/contact" class="justify-between">Contact</a>
 					</li>
 					<li>
-						<form action="/logout" method="POST">
-							<button type="submit" class="w-full text-start">Logout</button>
-						</form>
+						<a href="/contact" class="justify-between">Scedual a tour</a>
+					</li>
+					<li>
+						<a href="/login" class="justify-between">Login</a>
 					</li>
 				</ul>
 			</div>
@@ -71,9 +70,9 @@
 		<nav class="flex justify-between navbar ba-base-100 border-b">
 			<div>
 				{#if data.isAdmin}
-					<a href="/" class="btn btn-ghost normal-case text-xl">Day Care Admin</a>
+					<a href="/" class="btn btn-ghost normal-case text-xl">Creative Kids Cottage Admin</a>
 				{:else}
-					<a href="/" class="btn btn-ghost normal-case text-xl">Day Care</a>
+					<a href="/" class="btn btn-ghost normal-case text-xl">Creative Kids Cottage</a>
 				{/if}
 			</div>
 			<div>
@@ -114,7 +113,7 @@
 	</div>
 {/if}
 
-<div class="py-4">
+<div class="">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<slot />
 	</div>
