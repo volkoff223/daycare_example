@@ -9,12 +9,12 @@
 <!--Buttons for user not logged in-->
 {#if !data.user}
 	<div class="min-h-full">
-		<nav class="flex justify-between navbar ba-base-100 border-b">
+		<nav class="flex justify-end sm:justify-between navbar ba-base-100">
 			<div class="hidden sm:block">
 				<a href="/" class="btn btn-ghost normal-case text-xl">Creative Kids Cottage</a>
 			</div>
 
-			<div class="dropdown dropdown-end mr-4">
+			<div class="justify-right dropdown dropdown-end mr-4">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<label class="btn btn-circle swap swap-rotate">

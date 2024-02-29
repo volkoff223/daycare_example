@@ -3,7 +3,7 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	daisyui: {
-		themes: ['winter']
+		themes: ['dracula']
 	},
 
 	plugins: [require('daisyui')]
